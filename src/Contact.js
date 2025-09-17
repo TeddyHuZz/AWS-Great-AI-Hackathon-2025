@@ -18,7 +18,7 @@ function Contact() {
         </p>
       </div>
 
-      {/* Contact Options - Same format as benefits cards */}
+      {/* Contact Options */}
       <div className="contactContainer">
         <div className="firstContact">
           <h2>Email Support</h2>

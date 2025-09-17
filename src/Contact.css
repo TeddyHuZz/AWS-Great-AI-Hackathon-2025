@@ -24,7 +24,6 @@
     margin: 1.5rem auto;
   }
   
-  /* Same format as benefitsContainer */
   .contactContainer {
     display: flex;
     gap: 2rem;
@@ -34,7 +33,6 @@
     justify-content: center;
   }
   
-  /* Same format as benefit cards */
   .firstContact,
   .secondContact,
   .thirdContact {
@@ -48,7 +46,6 @@
     position: relative;
   }
   
-  /* Same icon format as benefits */
   .firstContact::before,
   .secondContact::before,
   .thirdContact::before {
@@ -79,7 +76,6 @@
     background: #e8e5ff;
   }
   
-  /* Same text formatting as benefits */
   .firstContact h2,
   .secondContact h2,
   .thirdContact h2 {
