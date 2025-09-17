@@ -1,0 +1,108 @@
+.Contact {
+    padding-top: 2rem;
+  }
+  
+  .contactHeader {
+    text-align: center;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contactTitle {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 1rem 0;
+    line-height: 1.2;
+    color: #333;
+  }
+  
+  .contactDescription {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 1.5rem auto;
+  }
+  
+  /* Same format as benefitsContainer */
+  .contactContainer {
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    justify-content: center;
+  }
+  
+  /* Same format as benefit cards */
+  .firstContact,
+  .secondContact,
+  .thirdContact {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    flex: 1;
+    max-width: 320px;
+    position: relative;
+  }
+  
+  /* Same icon format as benefits */
+  .firstContact::before,
+  .secondContact::before,
+  .thirdContact::before {
+    content: "";
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #e8e5ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 24px;
+  }
+  
+  .firstContact::before {
+    content: "📧";
+    background: #e8e5ff;
+  }
+  
+  .secondContact::before {
+    content: "📞";
+    background: #e8e5ff;
+  }
+  
+  .thirdContact::before {
+    content: "💬";
+    background: #e8e5ff;
+  }
+  
+  /* Same text formatting as benefits */
+  .firstContact h2,
+  .secondContact h2,
+  .thirdContact h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+    color: #2d3748;
+  }
+  
+  .firstContact p,
+  .secondContact p,
+  .thirdContact p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .firstContact span,
+  .secondContact span,
+  .thirdContact span {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+  }

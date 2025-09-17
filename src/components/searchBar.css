@@ -1,0 +1,56 @@
+.searchBarContainer {
+  display: flex;
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 12px 24px;
+}
+
+.searchInputWrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 0 12px;
+}
+
+.searchIcon {
+  color: #666;
+  margin-right: 12px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 8px 0;
+  width: 100%;
+}
+
+input::placeholder {
+  color: #666;
+}
+
+.findFundingButton {
+  background-color: #7c6afa;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.findFundingButton:hover {
+  background-color: #6557d3;
+}
+
+.buttonArrow {
+  font-size: 20px;
+}

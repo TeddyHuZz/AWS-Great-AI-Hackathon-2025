@@ -1,38 +1,121 @@
 .App {
+  padding-top: 100px;
+}
+
+.mainContent {
+  text-align: center;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.trustedBadge {
+  background-color: #4a4a4a;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 2rem;
+  font-size: 14px;
+}
+
+.mainTitle {
+  font-size: 64px;
+  font-weight: 700;
+  margin: 1rem 0;
+  line-height: 1.2;
+}
+
+.mainTitle .mainTitleHighlight {
+  color: #7c6afa;
+}
+
+.productDescription {
+  color: #666;
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 1.5rem auto;
+}
+
+.searchBarSpan {
+  margin-top: 1rem;
+  font-size: 14px;
+  color: #666;
+  display: block;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.benefitsContainer {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.firstBenefit,
+.secondBenefit,
+.thirdBenefit {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  flex: 1;
+  max-width: 320px;
+  position: relative;
+  min-width: 250px; /* Ensure minimum width */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.firstBenefit::before,
+.secondBenefit::before,
+.thirdBenefit::before {
+  content: "";
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #e8e5ff;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0 auto 1.5rem;
+  font-size: 24px;
 }
 
-.App-link {
-  color: #61dafb;
+.firstBenefit::before {
+  content: "📈";
+  background: #e8e5ff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.secondBenefit::before {
+  content: "⏰";
+  background: #e8e5ff;
+}
+
+.thirdBenefit::before {
+  content: "🛡️";
+  background: #e8e5ff;
+}
+
+.firstBenefit h2,
+.secondBenefit h2,
+.thirdBenefit h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  color: #2d3748;
+}
+
+.firstBenefit p,
+.secondBenefit p,
+.thirdBenefit p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
 }
