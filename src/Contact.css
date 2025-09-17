@@ -106,3 +106,78 @@
     line-height: 1.5;
     margin: 0;
   }
+
+  .additionalInfoContainer {
+    max-width: 600px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+  }
+  
+  .emailField {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 16px;
+    padding: 2rem;
+  }
+  
+  .emailField h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+    color: #2d3748;
+  }
+  
+  .emailField p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 2rem 0;
+  }
+  
+  .formGroup {
+    margin-bottom: 1.5rem;
+  }
+  
+  .formGroup label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #2d3748;
+  }
+  
+  .formGroup input,
+  .formGroup select,
+  .formGroup textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background: white;
+  }
+  
+  .formGroup input:focus,
+  .formGroup select:focus,
+  .formGroup textarea:focus {
+    outline: none;
+    border-color: #7c6afa;
+    box-shadow: 0 0 0 2px rgba(124, 106, 250, 0.1);
+  }
+  
+  .submitButton {
+    width: 100%;
+    background-color: #7c6afa;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 2rem;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    background-color: #6557d3;
+  }

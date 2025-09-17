@@ -1,6 +1,13 @@
+import { useState } from "react";
 import "./Contact.css";
 
 function Contact() {
+  const [selectedSubject, setSelectedSubject] = useState('generalInquiry'); // Default value
+
+  const handleChange = (event) => {
+    setSelectedSubject(event.target.value);
+  };
+
   return (
     <div className="Contact">
       <div className="contactHeader">
@@ -25,8 +32,47 @@ function Contact() {
         </div>
         <div className="thirdContact">
           <h2>Live Chat</h2>
-          <p>Chat with our expert support team in real-time. </p>
+          <p>Chat with our expert support team in real-time.</p>
           <span>Available 9 AM - 5 PM (GMT+8)</span>
+        </div>
+      </div>
+
+      <div className="additionalInfoContainer">
+        <div className="emailField">
+          <h2>Send Us a Message</h2>
+          <p>We're here to help you with any questions or concerns you may have. Please fill out the form below and we'll get back to you as soon as possible.</p>
+          
+          <div className="formGroup">
+            <label>Full Name *</label>
+            <input type="text" placeholder="John Doe" />
+          </div>
+          
+          <div className="formGroup">
+            <label>Email Address *</label>
+            <input type="email" placeholder="xxx@xxx.com" />
+          </div>
+
+          <div className="formGroup">
+            <label>Company Name *</label>
+            <input type="text" placeholder="John Software House Sdn Bhd" />
+          </div>
+
+          <div className="formGroup">
+            <label htmlFor="subject-select">Subject *</label>
+            <select id="subject-select" value={selectedSubject} onChange={handleChange}>
+              <option value="generalInquiry">General Inquiry</option>
+              <option value="fundingApplication">Funding Application Help</option>
+              <option value="technicalSupport">Technical Support</option>
+              <option value="partnership">Partnership Opportunities</option>
+            </select>
+          </div>
+
+          <div className="formGroup">
+            <label>Message *</label>
+            <textarea placeholder="Please describe your inquiry..." rows="5"></textarea>
+          </div>
+
+          <button className="submitButton">Send Message</button>
         </div>
       </div>
     </div>
