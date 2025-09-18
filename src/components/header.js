@@ -14,7 +14,7 @@ export function Header() {
 
         {/* Navigation Links */}
         <nav className="navigation">
-          <a href="dashboard">Dashboard</a>
+          <Link to="/dashboard">Dashboard</Link>
           <Link to="/resources">Resources</Link>
           <Link to="/contact">Contact Us</Link>
         </nav>
