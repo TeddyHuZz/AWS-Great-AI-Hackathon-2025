@@ -1,0 +1,198 @@
+.Resources {
+    padding-top: 2rem;
+  }
+  
+  .resourcesHeader {
+    text-align: center;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .resourcesTitle {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 1rem 0;
+    line-height: 1.2;
+    color: #333;
+  }
+  
+  .resourcesTitle .resourcesTitleHighlight {
+    color: #7c6afa;
+  }
+
+  
+  .resourcesDescription {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 1.5rem auto;
+  }
+
+  .resourcesSteps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.resourcesStepOne,
+.resourcesStepTwo,
+.resourcesStepThree,
+.resourcesStepFour {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    text-align: left;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.resourcesStepNumberOne,
+.resourcesStepNumberTwo,
+.resourcesStepNumberThree,
+.resourcesStepNumberFour {
+    font-size: 24px;
+    font-weight: 700;
+    color: #7c6afa;
+    background: #e8e5ff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.resourcesStepContent {
+    flex: 1;
+}
+
+.resourcesStepOneTitle,
+.resourcesStepTwoTitle,
+.resourcesStepThreeTitle,
+.resourcesStepFourTitle {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    color: #2d3748;
+}
+
+.resourcesStepOneDescription,
+.resourcesStepTwoDescription,
+.resourcesStepThreeDescription,
+.resourcesStepFourDescription {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.resourcesFAQ {
+    max-width: 800px;
+    margin: 6rem auto 4rem;
+    padding: 0 2rem;
+}
+
+.resourcesFAQContent {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.resourcesFAQTitle {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 1rem 0;
+    line-height: 1.2;
+    color: #333;
+}
+
+.resourcesFAQDescription {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 1.5rem auto;
+}
+
+.resourcesFAQQuestions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.faq-box {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-box:hover {
+    border-color: #7c6afa;
+    box-shadow: 0 2px 8px rgba(124, 106, 250, 0.1);
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #f1f3f4;
+}
+
+.faq-question h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2d3748;
+    flex: 1;
+    padding-right: 1rem;
+}
+
+.faq-icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #7c6afa;
+    color: white;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.faq-icon.open {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-answer.open {
+    max-height: 200px;
+    padding: 0 2rem 1.5rem;
+}
+
+.faq-answer p {
+    margin: 0;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
