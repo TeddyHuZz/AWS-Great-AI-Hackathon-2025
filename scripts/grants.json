@@ -1,0 +1,650 @@
+[
+  {
+    "fund_id": "ncer_coe_user_2025",
+    "name": "NCER CoE User Grant",
+    "agency": "NTIC (NCER Technology Innovation Centre)",
+    "type": "matching_grant",
+    "amount_min": 5000,
+    "amount_max": 100000,
+    "currency": "MYR",
+    "duration_months": 12,
+    "application_deadline": "2025-12-31",
+    "region": [
+      "Perlis",
+      "Kedah",
+      "Pulau Pinang",
+      "Perak"
+    ],
+    "eligibility_text": "Local micro, SME and large local companies in NCER. Product/process development must be performed by NTIC-approved CoE Provider.",
+    "eligibility_tags": [
+      "SME",
+      "NCER",
+      "R&D",
+      "product_development",
+      "services",
+      "consultancy"
+    ],
+    "usage": [
+      "services",
+      "consultancy",
+      "equipment",
+      "testing",
+      "reliability",
+      "failure_analysis",
+      "R&D"
+    ],
+    "match_ratio": {
+      "grant": 0.5,
+      "company": 0.5
+    },
+    "claim_method": "reimbursement",
+    "restrictions": "Max 1 project per company per year; no double-dipping with other agencies.",
+    "application_url": "",
+    "source": "VeecoTech (user-provided) / NTIC",
+    "source_url": "",
+    "last_verified": "2025-09-20",
+    "notes": "Matching grant 50:50 up to RM100,000. 25% at project start, 75% at completion."
+  },
+  {
+    "fund_id": "cradle_cip_sprint",
+    "name": "CIP SPRINT",
+    "agency": "Cradle Fund Sdn Bhd",
+    "type": "conditional_convertible_commercialisation_grant",
+    "amount_min": null,
+    "amount_max": 600000,
+    "currency": "MYR",
+    "duration_months": 18,
+    "application_deadline": null,
+    "region": [
+      "national"
+    ],
+    "eligibility_text": "Entrepreneurs and companies commercialising technology-based ventures; funding supports product enhancement, market access and expansion.",
+    "eligibility_tags": [
+      "startup",
+      "tech",
+      "commercialisation",
+      "SME"
+    ],
+    "usage": [
+      "commercialisation",
+      "product_enhancement",
+      "market_access",
+      "market_expansion"
+    ],
+    "match_ratio": null,
+    "claim_method": "advance_and_reimbursement",
+    "restrictions": "",
+    "application_url": "",
+    "source": "VeecoTech (user-provided) / Cradle",
+    "source_url": "",
+    "last_verified": "2025-09-20",
+    "notes": "Conditional convertible commercialisation grant; at least 60% for commercialisation expenses."
+  },
+  {
+    "fund_id": "cradle_cip_spark",
+    "name": "CIP SPARK",
+    "agency": "Cradle Fund Sdn Bhd",
+    "type": "conditional_development_grant",
+    "amount_min": null,
+    "amount_max": 150000,
+    "currency": "MYR",
+    "duration_months": 18,
+    "application_deadline": null,
+    "region": [
+      "national"
+    ],
+    "eligibility_text": "Early-stage entrepreneurs (companies or individuals) for development and pre-commercialisation of technology products.",
+    "eligibility_tags": [
+      "pre-seed",
+      "startup",
+      "tech",
+      "development"
+    ],
+    "usage": [
+      "development",
+      "pre-commercialisation",
+      "commercialisation"
+    ],
+    "match_ratio": null,
+    "claim_method": "advance_and_reimbursement",
+    "restrictions": "",
+    "application_url": "",
+    "source": "VeecoTech (user-provided) / Cradle",
+    "source_url": "",
+    "last_verified": "2025-09-20",
+    "notes": "At least 60% for developmental expenses; up to RM150,000."
+  },
+  {
+    "fund_id": "msme_digital_grant_mcmc",
+    "name": "MSME Digital Grant",
+    "agency": "Malaysian Communications and Multimedia Commission (MCMC)",
+    "type": "matching_grant",
+    "amount_min": null,
+    "amount_max": 5000,
+    "currency": "MYR",
+    "duration_months": null,
+    "application_deadline": "2025-07-18",
+    "region": [
+      "national"
+    ],
+    "eligibility_text": "MSMEs at least 60% Malaysian-owned, registered with SSM/PBT/SKM, in operation for at least 6 months, minimum annual sales turnover RM50,000; must not have received prior digital matching grants.",
+    "eligibility_tags": [
+      "MSME",
+      "digitalisation",
+      "e-pos",
+      "crm",
+      "erp",
+      "ai",
+      "e-invoice"
+    ],
+    "usage": [
+      "digital_marketing",
+      "digital_payment",
+      "erp",
+      "crm",
+      "hr_payroll",
+      "digital_signature",
+      "cyber_security",
+      "iot",
+      "ai",
+      "e-invoice"
+    ],
+    "match_ratio": {
+      "grant": 0.5,
+      "company": 0.5
+    },
+    "claim_method": "reimbursement",
+    "restrictions": "Must not have received previous digitalisation matching grants.",
+    "application_url": "",
+    "source": "VeecoTech (user-provided) / MCMC",
+    "source_url": "",
+    "last_verified": "2025-09-20",
+    "notes": "Cover nine digitalisation areas; new AI and E-Invoice categories."
+  },
+  {
+    "fund_id": "penjaja_digital_grant",
+    "name": "Penjaja Digital Grant",
+    "agency": "Malaysian Communications and Multimedia Commission (MCMC)",
+    "type": "one_off_grant",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "currency": "MYR",
+    "duration_months": null,
+    "application_deadline": "2025-07-18",
+    "region": [
+      "national"
+    ],
+    "eligibility_text": "Street vendors (permanent/temporary/travelling), Malaysian citizens, registered with SSM or Local Authority; cannot receive both Penjaja digital grant and MSME Digital Grant.",
+    "eligibility_tags": [
+      "street_vendor",
+      "micro",
+      "digital_payment",
+      "e-pos"
+    ],
+    "usage": [
+      "digital_payment",
+      "e-pos"
+    ],
+    "match_ratio": null,
+    "claim_method": "reimbursement",
+    "restrictions": "Cannot be recipient of both Penjaja Digital Grant MADANI and MSME Digital Grant MADANI.",
+    "application_url": "",
+    "source": "VeecoTech (user-provided) / MCMC",
+    "source_url": "",
+    "last_verified": "2025-09-20",
+    "notes": "One-off RM1,000 for digital payment adoption."
+  },
+  {
+    "fund_id": "mdxg_mdec",
+    "name": "Malaysia Digital X-Port Grant (MDXG)",
+    "agency": "Malaysia Digital Economy Corporation (MDEC)",
+    "type": "matching_grant",
+    "amount_min": null,
+    "amount_max": 1000000,
+    "currency": "MYR",
+    "duration_months": 12,
+    "application_deadline": null,
+    "region": [
+      "national"
+    ],
+    "eligibility_text": "Local-owned tech companies with export readiness; funding up to 50% for local-owned companies (up to RM1M), up to 30% for majority foreign-owned (up to RM1M); project up to 1 year.",
+    "eligibility_tags": [
+      "tech",
+      "export",
+      "digital",
+      "mdec",
+      "export_ready"
+    ],
+    "usage": [
+      "export_expansion",
+      "market_development",
+      "digital_marketing",
+      "platform_onboarding"
+    ],
+    "match_ratio": null,
+    "claim_method": "reimbursement",
+    "restrictions": "",
+    "application_url": "",
+    "source": "VeecoTech (user-provided) / MDEC",
+    "source_url": "",
+    "last_verified": "2025-09-20",
+    "notes": "Opened 9 Sep 2024 until funds committed; requires pitching and review."
+  },
+  {
+    "fund_id": "matrade_mdg",
+    "name": "Market Development Grant (MDG)",
+    "agency": "Malaysia External Trade Development Corporation (MATRADE)",
+    "type": "reimbursable_grant",
+    "amount_min": null,
+    "amount_max": 300000,
+    "currency": "MYR",
+    "duration_months": null,
+    "application_deadline": null,
+    "region": [
+      "national",
+      "international"
+    ],
+    "eligibility_text": "SMEs, professional service providers, trade associations, cooperatives participating in international trade fairs/exhibitions (physical or virtual).",
+    "eligibility_tags": [
+      "export",
+      "trade_fairs",
+      "b2b",
+      "matrade"
+    ],
+    "usage": [
+      "trade_fair_costs",
+      "digital_marketing_for_virtual_events"
+    ],
+    "match_ratio": null,
+    "claim_method": "reimbursement",
+    "restrictions": "Subject to availability of government funds.",
+    "application_url": "",
+    "source": "VeecoTech (user-provided) / MATRADE",
+    "source_url": "",
+    "last_verified": "2025-09-20",
+    "notes": "Lifetime limit RM300,000."
+  },
+  {
+    "fund_id": "matrade_etrade_2_0",
+    "name": "eTRADE Programme 2.0",
+    "agency": "MATRADE",
+    "type": "reimbursable_incentive",
+    "amount_min": null,
+    "amount_max": 20000,
+    "currency": "MYR",
+    "duration_months": 12,
+    "application_deadline": "2025-12-31",
+    "region": [
+      "national",
+      "international"
+    ],
+    "eligibility_text": "MSMEs accelerating export via cross-border eCommerce; must be MATRADE member, registered with MyExport, meet ownership and operation duration conditions.",
+    "eligibility_tags": [
+      "ecommerce",
+      "export",
+      "digital_marketing",
+      "matrade"
+    ],
+    "usage": [
+      "onboarding_fee",
+      "digital_marketing",
+      "training"
+    ],
+    "match_ratio": null,
+    "claim_method": "reimbursement",
+    "restrictions": "Specific onboarding and digital marketing/training criteria apply.",
+    "application_url": "",
+    "source": "VeecoTech (user-provided) / MATRADE",
+    "source_url": "",
+    "last_verified": "2025-09-20",
+    "notes": "Onboarding scheme RM5,000; DMT scheme RM20,000."
+  },
+  {
+    "fund_id": "pam_agropreneur_muda",
+    "name": "Program Agropreneur Muda (PAM)",
+    "agency": "Ministry of Agriculture and Food Security",
+    "type": "grant_support",
+    "amount_min": null,
+    "amount_max": 20000,
+    "currency": "MYR",
+    "duration_months": null,
+    "application_deadline": null,
+    "region": [
+      "national"
+    ],
+    "eligibility_text": "Malaysian citizens aged 18-40 engaged or starting in agro-based entrepreneurship; includes training, merchandise assistance and financing options.",
+    "eligibility_tags": [
+      "agriculture",
+      "young_entrepreneur",
+      "agrobank",
+      "tekun"
+    ],
+    "usage": [
+      "merchandise",
+      "training",
+      "technical_consulting"
+    ],
+    "match_ratio": null,
+    "claim_method": "in-kind_and_reimbursement",
+    "restrictions": "",
+    "application_url": "",
+    "source": "VeecoTech (user-provided) / KPKM",
+    "source_url": "",
+    "last_verified": "2025-09-20",
+    "notes": "Includes non-repayable merchandise up to RM20,000 and technical training."
+  },
+  {
+    "fund_id": "hip_geran_padanan",
+    "name": "Geran Padanan High Impact Product (HIP)",
+    "agency": "Ministry of Agriculture and Food Security",
+    "type": "matching_grant",
+    "amount_min": null,
+    "amount_max": 200000,
+    "currency": "MYR",
+    "duration_months": null,
+    "application_deadline": null,
+    "region": [
+      "national"
+    ],
+    "eligibility_text": "Entrepreneurs engaged in food and non-food agricultural products with annual gross sales RM300,000 to RM5,000,000.",
+    "eligibility_tags": [
+      "agriculture",
+      "matching_grant",
+      "food",
+      "product_development"
+    ],
+    "usage": [
+      "product_upgrade",
+      "processing",
+      "commercialisation"
+    ],
+    "match_ratio": {
+      "grant": 0.5,
+      "entrepreneur": 0.5
+    },
+    "claim_method": "reimbursement",
+    "restrictions": "",
+    "application_url": "",
+    "source": "VeecoTech (user-provided) / KPKM",
+    "source_url": "",
+    "last_verified": "2025-09-20",
+    "notes": "Matching grant 50:50 up to RM200,000."
+  },
+  {
+    "fund_id": "cup_geran_padanan",
+    "name": "Geran Padanan Change Upgrade Product (CUP)",
+    "agency": "Ministry of Agriculture and Food Security",
+    "type": "matching_grant",
+    "amount_min": null,
+    "amount_max": 60000,
+    "currency": "MYR",
+    "duration_months": null,
+    "application_deadline": null,
+    "region": [
+      "national"
+    ],
+    "eligibility_text": "Micro-entrepreneurs in food and non-food agricultural products with annual gross sales less than RM300,000.",
+    "eligibility_tags": [
+      "micro",
+      "agriculture",
+      "matching_grant"
+    ],
+    "usage": [
+      "product_upgrade",
+      "processing",
+      "commercialisation"
+    ],
+    "match_ratio": {
+      "grant": 0.7,
+      "entrepreneur": 0.3
+    },
+    "claim_method": "reimbursement",
+    "restrictions": "",
+    "application_url": "",
+    "source": "VeecoTech (user-provided) / KPKM",
+    "source_url": "",
+    "last_verified": "2025-09-20",
+    "notes": "Matching grant 70:30 up to RM60,000."
+  },
+  {
+    "fund_id": "rezeki_tani",
+    "name": "Program Rezeki Tani",
+    "agency": "Ministry of Agriculture and Food Security",
+    "type": "in_kind_grant",
+    "amount_min": null,
+    "amount_max": 10000,
+    "currency": "MYR",
+    "duration_months": null,
+    "application_deadline": null,
+    "region": [
+      "national"
+    ],
+    "eligibility_text": "Malaysian citizens aged 18-60 with household income <= RM2,650, engaged in agricultural production, processing, distribution and marketing.",
+    "eligibility_tags": [
+      "agriculture",
+      "low_income",
+      "in-kind",
+      "training"
+    ],
+    "usage": [
+      "in-kind_assistance",
+      "training"
+    ],
+    "match_ratio": null,
+    "claim_method": "in-kind",
+    "restrictions": "",
+    "application_url": "",
+    "source": "VeecoTech (user-provided) / KPKM",
+    "source_url": "",
+    "last_verified": "2025-09-20",
+    "notes": "In-kind grants and training up to RM10,000."
+  },
+  {
+    "fund_id": "lctf_bnm",
+    "name": "Low Carbon Transition Facility (LCTF)",
+    "agency": "Bank Negara Malaysia (BNM)",
+    "type": "financing_facility",
+    "amount_min": null,
+    "amount_max": 10000000,
+    "currency": "MYR",
+    "duration_months": 120,
+    "application_deadline": "2022-02-03",
+    "region": [
+      "national"
+    ],
+    "eligibility_text": "SMEs across sectors adopting sustainable and low-carbon practices; facility provides financing up to RM10 million at subsidised rates.",
+    "eligibility_tags": [
+      "sustainability",
+      "green",
+      "low_carbon",
+      "bnm"
+    ],
+    "usage": [
+      "capex",
+      "green_projects",
+      "energy_efficiency"
+    ],
+    "match_ratio": null,
+    "claim_method": "loan",
+    "restrictions": "",
+    "application_url": "",
+    "source": "VeecoTech (user-provided) / BNM",
+    "source_url": "",
+    "last_verified": "2025-09-20",
+    "notes": "Financing up to RM10M, period up to 10 years, rate up to 5%."
+  },
+  {
+    "fund_id": "ntis_mtdc",
+    "name": "National Technology & Innovation Sandbox (NTIS)",
+    "agency": "Malaysian Technology Development Corporation (MTDC)",
+    "type": "sandbox_grant_and_cpn",
+    "amount_min": 250000,
+    "amount_max": 5000000,
+    "currency": "MYR",
+    "duration_months": null,
+    "application_deadline": null,
+    "region": [
+      "national"
+    ],
+    "eligibility_text": "Companies (not sole proprietorships) testing products, services, business models in live environments; multiple sandbox funds with varying funding levels and mechanisms.",
+    "eligibility_tags": [
+      "sandbox",
+      "r&d",
+      "commercialisation",
+      "mtdc"
+    ],
+    "usage": [
+      "testing",
+      "pilot",
+      "commercialisation",
+      "r&d"
+    ],
+    "match_ratio": null,
+    "claim_method": "grant_and_convertible_notes",
+    "restrictions": "",
+    "application_url": "",
+    "source": "VeecoTech (user-provided) / NTIS",
+    "source_url": "",
+    "last_verified": "2025-09-20",
+    "notes": "Sandbox funds range RM250k to RM5M depending on scheme."
+  },
+  {
+    "fund_id": "rise4wrd_hrdcorp",
+    "name": "RiSE4WRD (HRD Corp)",
+    "agency": "Human Resources Development Corporation (HRD Corp)",
+    "type": "training_fund",
+    "amount_min": null,
+    "amount_max": 25000,
+    "currency": "MYR",
+    "duration_months": null,
+    "application_deadline": null,
+    "region": [
+      "national"
+    ],
+    "eligibility_text": "SMEs from manufacturing and related sectors who have completed Industry4WRD Readiness Assessment; funding for training allocation up to RM25,000.",
+    "eligibility_tags": [
+      "training",
+      "industry4wrd",
+      "manufacturing",
+      "hrdcorp"
+    ],
+    "usage": [
+      "training_fees",
+      "trainee_allowance"
+    ],
+    "match_ratio": null,
+    "claim_method": "reimbursement",
+    "restrictions": "Attendance and completion requirements often apply.",
+    "application_url": "",
+    "source": "VeecoTech (user-provided) / HRD Corp",
+    "source_url": "",
+    "last_verified": "2025-09-20",
+    "notes": "Training fund; disbursement often 30%/70% based on completion metrics."
+  },
+  {
+    "fund_id": "brf_bnm",
+    "name": "Business Recapitalisation Facility (BRF)",
+    "agency": "Bank Negara Malaysia (BNM)",
+    "type": "facility",
+    "amount_min": null,
+    "amount_max": 5000000,
+    "currency": "MYR",
+    "duration_months": 120,
+    "application_deadline": "2022-02-03",
+    "region": [
+      "national"
+    ],
+    "eligibility_text": "Viable Malaysian-owned SMEs seeking capital expenditure; supports equity financing, blended finance or debt from participating financial institutions.",
+    "eligibility_tags": [
+      "recapitalisation",
+      "bnm",
+      "equity",
+      "blended_finance"
+    ],
+    "usage": [
+      "capex",
+      "equity_injection",
+      "working_capital"
+    ],
+    "match_ratio": null,
+    "claim_method": "loan_or_equity",
+    "restrictions": "",
+    "application_url": "",
+    "source": "VeecoTech (user-provided) / BNM",
+    "source_url": "",
+    "last_verified": "2025-09-20",
+    "notes": "Supports equity or blended finance up to RM5M."
+  },
+  {
+    "fund_id": "smerf_midf",
+    "name": "SME Revitalisation Financing (SMERF)",
+    "agency": "Malaysian Industrial Development Finance (MIDF)",
+    "type": "financing",
+    "amount_min": null,
+    "amount_max": 250000,
+    "currency": "MYR",
+    "duration_months": 84,
+    "application_deadline": null,
+    "region": [
+      "national"
+    ],
+    "eligibility_text": "Viable SMEs and companies in underserved sectors facing financial constraints; financing for machinery, IT hardware/software, vehicles and working capital.",
+    "eligibility_tags": [
+      "financing",
+      "midf",
+      "sme_revitalisation",
+      "equipment"
+    ],
+    "usage": [
+      "machinery",
+      "it_hardware",
+      "software",
+      "commercial_vehicles",
+      "working_capital"
+    ],
+    "match_ratio": null,
+    "claim_method": "loan",
+    "restrictions": "",
+    "application_url": "",
+    "source": "VeecoTech (user-provided) / MIDF",
+    "source_url": "",
+    "last_verified": "2025-09-20",
+    "notes": "Financing up to RM250,000 or 90% of eligible items; tenure up to 7 years."
+  },
+  {
+    "fund_id": "sef_matrade",
+    "name": "Service Export Fund (SEF)",
+    "agency": "Malaysia External Trade Development Corporation (MATRADE)",
+    "type": "reimbursable_grant",
+    "amount_min": null,
+    "amount_max": 4300000,
+    "currency": "MYR",
+    "duration_months": null,
+    "application_deadline": null,
+    "region": [
+      "national",
+      "international"
+    ],
+    "eligibility_text": "Service providers (except tourism, real estate, banking and insurance) and related organisations seeking to expand internationally; supports export-related activities.",
+    "eligibility_tags": [
+      "service_export",
+      "matrade",
+      "export",
+      "b2b"
+    ],
+    "usage": [
+      "export_development",
+      "market_entry",
+      "trade_missions",
+      "digital_marketing"
+    ],
+    "match_ratio": null,
+    "claim_method": "reimbursement",
+    "restrictions": "",
+    "application_url": "",
+    "source": "VeecoTech (user-provided) / MATRADE",
+    "source_url": "",
+    "last_verified": "2025-09-20",
+    "notes": "Maximum reimbursable grants up to RM4.3M per entity."
+  }
+]
