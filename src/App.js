@@ -7,11 +7,12 @@ import Resources from "./Resources";
 import Dashboard from "./Dashboard";
 import Login from "./components/login";
 import Signup from "./components/signup";
+import Loggedin from "./pages/Loggedin"; 
 
 function Home() {
   return (
     <>
-      {/* Main Title */}
+      
       <div className="mainContent">
         <span className="trustedBadge">Trusted by 10,000+ SMEs</span>
         <h1 className="mainTitle">
@@ -25,25 +26,34 @@ function Home() {
         </p>
       </div>
 
-      {/* Search Bar */}
+      
       <SearchBar />
       <span className="searchBarSpan">
         Get matched with relevant funding in 60 seconds!
       </span>
 
-      {/* Benefits */}
+      
       <div className="benefitsContainer">
         <div className="firstBenefit">
           <h2>AI-Powered Matching</h2>
-          <p>Our intelligent algorithm analyzes your business profile and matches you with the most relevant funding opportunities.</p>
+          <p>
+            Our intelligent algorithm analyzes your business profile and matches
+            you with the most relevant funding opportunities.
+          </p>
         </div>
         <div className="secondBenefit">
           <h2>Save Time</h2>
-          <p>Reduce hours of research to minutes. We do the heavy lifting so you can focus on growing your business.</p>
+          <p>
+            Reduce hours of research to minutes. We do the heavy lifting so you
+            can focus on growing your business.
+          </p>
         </div>
         <div className="thirdBenefit">
           <h2>Trusted & Secure</h2>
-          <p>Bank-level security with verified government funding sources. Your data is protected and never shared.</p>
+          <p>
+            Bank-level security with verified government funding sources. Your
+            data is protected and never shared.
+          </p>
         </div>
       </div>
     </>
@@ -57,9 +67,10 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/Loggedin" element={<Loggedin />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/resources" element={<Resources />} />
-          <Route path="/dasboard" element={<Dashboard />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
         </Routes>

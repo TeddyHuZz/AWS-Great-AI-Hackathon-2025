@@ -1,0 +1,75 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.logo span {
+  margin: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+}
+
+.navigation {
+  display: flex;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #666;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+  color: #333;
+}
+
+.profileSection {
+  display: flex;
+  align-items: center;
+}
+
+.profileButton {
+  background-color: #7c6afa;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.profileButton:hover {
+  background-color: #6557d3;
+}

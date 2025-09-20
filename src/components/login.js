@@ -1,11 +1,20 @@
 // src/components/Login.js
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom"; // ✅ import useNavigate
 import "./login.css";
 import "./loginresponsive.css";
 
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate(); // ✅ hook for navigation
+
+  // Handle form submit
+  const handleLogin = (e) => {
+    e.preventDefault(); // prevent page refresh
+    // 👉 Here you would normally check credentials with backend API
+    // For now, just navigate to Loggedin page
+    navigate("/Loggedin");
+  };
 
   return (
     <div className="login-main">
@@ -25,7 +34,7 @@ function Login() {
             <h2>Welcome Back</h2>
             <p>Please login to your account</p>
 
-            <form>
+            <form onSubmit={handleLogin}>
               {/* Email */}
               <input type="email" placeholder="Email" required />
 
@@ -66,8 +75,7 @@ function Login() {
             </form>
 
             <p className="login-bottom-p">
-              Don’t have an account?{" "}
-              <Link to="/signup">Sign Up</Link>
+              Don’t have an account? <Link to="/signup">Sign Up</Link>
             </p>
           </div>
         </div>

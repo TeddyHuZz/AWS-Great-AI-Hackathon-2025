@@ -1,16 +1,16 @@
-.App {
+.Loggedin {
   padding-top: 100px;
   padding-bottom: 80px;
 }
 
-.mainContent {
+.Loggedin .mainContent {
   text-align: center;
   padding: 4rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.trustedBadge {
+.Loggedin .trustedBadge {
   background-color: #4a4a4a;
   color: white;
   padding: 8px 16px;
@@ -22,18 +22,18 @@
   font-size: 14px;
 }
 
-.mainTitle {
+.Loggedin .mainTitle {
   font-size: 64px;
   font-weight: 700;
   margin: 1rem 0;
   line-height: 1.2;
 }
 
-.mainTitle .mainTitleHighlight {
+.Loggedin .mainTitleHighlight {
   color: #7c6afa;
 }
 
-.productDescription {
+.Loggedin .productDescription {
   color: #666;
   font-size: 20px;
   line-height: 1.6;
@@ -41,7 +41,7 @@
   margin: 1.5rem auto;
 }
 
-.searchBarSpan {
+.Loggedin .searchBarSpan {
   margin-top: 1rem;
   font-size: 14px;
   color: #666;
@@ -49,9 +49,9 @@
   text-align: center;
 }
 
-.benefitsContainer {
-  display: flex !important;
-  flex-direction: row !important;
+.Loggedin .benefitsContainer {
+  display: flex;
+  flex-direction: row;
   gap: 2rem;
   max-width: 1200px;
   margin: 4rem auto;
@@ -59,9 +59,9 @@
   justify-content: center;
 }
 
-.firstBenefit,
-.secondBenefit,
-.thirdBenefit {
+.Loggedin .firstBenefit,
+.Loggedin .secondBenefit,
+.Loggedin .thirdBenefit {
   background: #f8f9fa;
   border: 1px solid #e9ecef;
   border-radius: 16px;
@@ -73,9 +73,9 @@
   min-width: 250px;
 }
 
-.firstBenefit::before,
-.secondBenefit::before,
-.thirdBenefit::before {
+.Loggedin .firstBenefit::before,
+.Loggedin .secondBenefit::before,
+.Loggedin .thirdBenefit::before {
   content: "";
   width: 48px;
   height: 48px;
@@ -88,33 +88,30 @@
   font-size: 24px;
 }
 
-.firstBenefit::before {
+.Loggedin .firstBenefit::before {
   content: "📈";
-  background: #e8e5ff;
 }
 
-.secondBenefit::before {
+.Loggedin .secondBenefit::before {
   content: "⏰";
-  background: #e8e5ff;
 }
 
-.thirdBenefit::before {
+.Loggedin .thirdBenefit::before {
   content: "🛡️";
-  background: #e8e5ff;
 }
 
-.firstBenefit h2,
-.secondBenefit h2,
-.thirdBenefit h2 {
+.Loggedin .firstBenefit h2,
+.Loggedin .secondBenefit h2,
+.Loggedin .thirdBenefit h2 {
   font-size: 20px;
   font-weight: 600;
   margin: 0 0 1rem 0;
   color: #2d3748;
 }
 
-.firstBenefit p,
-.secondBenefit p,
-.thirdBenefit p {
+.Loggedin .firstBenefit p,
+.Loggedin .secondBenefit p,
+.Loggedin .thirdBenefit p {
   color: #666;
   font-size: 14px;
   line-height: 1.5;
