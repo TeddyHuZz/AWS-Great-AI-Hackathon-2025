@@ -6,6 +6,7 @@ import Contact from "./Contact";
 import Resources from "./Resources";
 import Dashboard from "./Dashboard";
 import Login from "./components/login";
+import Signup from "./components/signup";
 
 function Home() {
   return (
@@ -60,6 +61,7 @@ function App() {
           <Route path="/resources" element={<Resources />} />
           <Route path="/dasboard" element={<Dashboard />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       </div>
     </Router>
