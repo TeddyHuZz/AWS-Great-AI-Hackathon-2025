@@ -21,7 +21,10 @@ export function Header() {
 
         {/* Auth Section */}
         <div className="authButtons">
-          <button className="signinButton">Login</button>
+          {/* Make Login button a Link */}
+          <Link to="/login">
+            <button className="signinButton">Login</button>
+          </Link>
           <button className="signupButton">Get Started</button>
         </div>
       </div>
