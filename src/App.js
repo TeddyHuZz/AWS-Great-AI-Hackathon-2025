@@ -5,6 +5,7 @@ import SearchBar from "./components/searchBar";
 import Contact from "./Contact";
 import Resources from "./Resources";
 import Dashboard from "./Dashboard";
+import Login from "./components/login";
 
 function Home() {
   return (
@@ -58,6 +59,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/dasboard" element={<Dashboard />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </div>
     </Router>
