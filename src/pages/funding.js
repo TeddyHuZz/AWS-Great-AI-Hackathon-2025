@@ -70,7 +70,7 @@ function Funding({ searchTerm }) {
               placeholder="Search fundings..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              onBlur={() => setShowSearch(false)} // close on blur
+              onBlur={() => setShowSearch(false)} 
               autoFocus
             />
           )}
