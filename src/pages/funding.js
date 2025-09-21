@@ -1,66 +1,130 @@
-import React, { useState } from "react";
-import Header from "/Header"; // ✅ adjust the path if your Header is in a different folder
-import "./funding.css";
+import React, { useState, useEffect } from "react";
+import "./Funding.css";
+import HeaderForLoggedIn from "../components/HeaderForLoggedIn";
+import { FiSearch, FiChevronDown } from "react-icons/fi";
 
-function Funding() {
-  // Pretend this comes from a search or database later
-  const [searchTerm] = useState("Digitalisation Grants");
+function Funding({ searchTerm }) {
+  const [fundings, setFundings] = useState([]);
+  const [showSearch, setShowSearch] = useState(false); 
+  const [searchQuery, setSearchQuery] = useState("");
+  const [expandedId, setExpandedId] = useState(null); 
 
-  // Mock funding opportunities (replace with DB/API later)
-  const opportunities = [
-    {
-      id: 1,
-      title: "SME Digitalisation Grant 2025",
-      tag: "Grant",
-      description:
-        "Get up to RM5,000 matching grant to digitalise your business with approved service providers.",
-      deadline: "December 31, 2025",
-    },
-    {
-      id: 2,
-      title: "SME Business Expansion Fund",
-      tag: "Loan",
-      description:
-        "Supports SMEs planning to expand locally or internationally with low-interest financing and advisory services.",
-      deadline: "November 15, 2025",
-    },
-    {
-      id: 3,
-      title: "Green Technology Financing Scheme",
-      tag: "Financing",
-      description:
-        "Encourages adoption of sustainable practices by providing partial government guarantees and financing options.",
-      deadline: "October 30, 2025",
-    },
-  ];
+  useEffect(() => {
+    const mockData = [
+      {
+        id: 1,
+        title: "SME Digitalisation Grant 2025",
+        description:
+          "Supports SMEs adopting digital tools with up to RM5,000 matching grant.",
+        howToApply: "Visit the official portal and submit required documents.",
+        image:
+          "https://images.unsplash.com/photo-1581090700227-4c4e1fef8a3b?fit=crop&w=800&q=80",
+      },
+      {
+        id: 2,
+        title: "Technology Upgrade Assistance 2025",
+        description:
+          "Funding for SMEs to upgrade machinery and improve productivity.",
+        howToApply: "Fill out the application form and provide business license.",
+        image:
+          "https://images.unsplash.com/photo-1605902711622-cfb43c4437f4?fit=crop&w=800&q=80",
+      },
+      {
+        id: 3,
+        title: "Green Business Fund 2026",
+        description:
+          "Grants to support environmentally friendly and sustainable SME projects.",
+        howToApply:
+          "Prepare sustainability plan and submit through the government portal.",
+        image:
+          "https://images.unsplash.com/photo-1508873696983-2dfd5898f08b?fit=crop&w=800&q=80",
+      },
+    ];
+    setFundings(mockData);
+  }, [searchTerm]);
+
+
+  const filteredFundings = fundings.filter((f) =>
+    f.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   return (
-    <div>
-      {/* ✅ Global header (same as other pages) */}
-      <Header />
+    <div className="fundingResultsContainer">
+      <HeaderForLoggedIn />
 
-      {/* Funding content */}
-      <div className="funding-page">
-        <h1 className="funding-title">
-          Results for: <span className="highlight">"{searchTerm}"</span>
+      <div className="resultsHeader">
+        <h1 className="resultsTitle">
+          Showing results for: <span>{searchTerm}</span>
         </h1>
 
-        <div className="funding-cards">
-          {opportunities.map((opportunity) => (
-            <div className="funding-card" key={opportunity.id}>
-              <div className="funding-tag">{opportunity.tag}</div>
-              <h2>{opportunity.title}</h2>
-              <p>{opportunity.description}</p>
-              <span className="funding-deadline">
-                Deadline: {opportunity.deadline}
-              </span>
-              <div className="funding-buttons">
-                <button className="apply-btn">Apply</button>
-                <button className="support-btn">Support</button>
+        <div className="searchWrapper">
+          {!showSearch ? (
+            <FiSearch
+              className="searchIcon"
+              onClick={() => setShowSearch(true)}
+            />
+          ) : (
+            <input
+              type="text"
+              className="searchInput"
+              placeholder="Search fundings..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              onBlur={() => setShowSearch(false)} // close on blur
+              autoFocus
+            />
+          )}
+        </div>
+      </div>
+
+      <div className="cardsGrid">
+        {filteredFundings.map((funding) => (
+          <div className="fundingCard" key={funding.id}>
+            <div className="cardImageWrapper">
+              <img
+                src={funding.image}
+                alt={funding.title}
+                className="cardImage"
+              />
+              <div className="imageOverlay">
+                <h2 className="cardTitle">{funding.title}</h2>
               </div>
             </div>
-          ))}
-        </div>
+
+            <div className="cardBody">
+              <p className="cardDescription">{funding.description}</p>
+
+              <div
+                className="howToApplyToggle"
+                onClick={() =>
+                  setExpandedId(expandedId === funding.id ? null : funding.id)
+                }
+              >
+                <h3 className="howToApplyTitle">How to Apply</h3>
+                <FiChevronDown
+                  className={`dropdownIcon ${
+                    expandedId === funding.id ? "rotated" : ""
+                  }`}
+                />
+              </div>
+
+              {expandedId === funding.id && (
+                <div className="howToApplyDropdown">
+                  <button
+                    className="chatbotLink"
+                    onClick={() => alert("Chatbot coming soon!")}
+                  >
+                    {funding.howToApply} (Open Chatbot)
+                  </button>
+                </div>
+              )}
+
+              <div className="cardActions">
+                <button className="applyButton">Apply</button>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

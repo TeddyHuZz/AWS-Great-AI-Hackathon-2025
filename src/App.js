@@ -8,7 +8,8 @@ import Dashboard from "./Dashboard";
 import Login from "./components/login";
 import Signup from "./components/signup";
 import Loggedin from "./pages/Loggedin"; 
-
+import Funding from "./pages/Funding";
+import ProfileSetup from "./pages/ProfileSetup";
 function Home() {
   return (
     <>
@@ -73,6 +74,8 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/funding" element={<Funding searchTerm="Digitalisation" />} />
+          <Route path="/profilesetup" element={<ProfileSetup />} /> 
         </Routes>
       </div>
     </Router>

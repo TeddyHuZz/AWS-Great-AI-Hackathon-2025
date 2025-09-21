@@ -6,11 +6,9 @@ import HeaderForLoggedIn from "../components/HeaderForLoggedIn";
 function Loggedin() {
   return (
     <>
-      {/* Header for logged in users */}
       <HeaderForLoggedIn />
       <HeaderForLoggedIn />
 
-      {/* Main Title */}
       <div className="mainContent">
         <span className="trustedBadge">Welcome back 👋</span>
         <h1 className="mainTitle">
@@ -22,13 +20,13 @@ function Loggedin() {
         </p>
       </div>
 
-      {/* Search Bar */}
+
       <SearchBar />
       <span className="searchBarSpan">
         Get matched with relevant funding in 60 seconds!
       </span>
 
-      {/* Benefits */}
+
       <div className="benefitsContainer">
         <div className="firstBenefit">
           <h2>Personalized Matches</h2>

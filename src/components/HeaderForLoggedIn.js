@@ -1,4 +1,3 @@
-// src/components/HeaderForLoggedIn.js
 import React from "react";
 import { Link } from "react-router-dom";
 import "./HeaderForLoggedIn.css";
@@ -14,17 +13,17 @@ function HeaderForLoggedIn() {
           </Link>
         </div>
 
-        {/* Navigation Links */}
+        {/* Navigation */}
         <nav className="navigation">
           <Link to="/dashboard">Dashboard</Link>
           <Link to="/resources">Resources</Link>
           <Link to="/contact">Contact Us</Link>
         </nav>
 
-        {/* Profile Section */}
+        {/* ✅ Profile button now goes to ProfileSetup */}
         <div className="profileSection">
-          <Link to="/profile" className="profileButton">
-            👤 Profile
+          <Link to="/ProfileSetup" className="profileButton">
+            Profile
           </Link>
         </div>
       </div>

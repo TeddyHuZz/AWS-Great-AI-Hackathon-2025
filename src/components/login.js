@@ -1,29 +1,24 @@
-// src/components/Login.js
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom"; // ✅ import useNavigate
+import { Link, useNavigate } from "react-router-dom";
 import "./login.css";
 import "./loginresponsive.css";
 
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
-  const navigate = useNavigate(); // ✅ hook for navigation
+  const navigate = useNavigate(); 
 
-  // Handle form submit
+
   const handleLogin = (e) => {
-    e.preventDefault(); // prevent page refresh
-    // 👉 Here you would normally check credentials with backend API
-    // For now, just navigate to Loggedin page
+    e.preventDefault(); 
     navigate("/Loggedin");
   };
 
   return (
     <div className="login-main">
-      {/* Left Side (Image / Branding) */}
       <div className="login-left">
         <img src="/logo192.png" alt="Login Illustration" />
       </div>
 
-      {/* Right Side (Form) */}
       <div className="login-right">
         <div className="login-right-container">
           <div className="login-logo">
@@ -35,10 +30,8 @@ function Login() {
             <p>Please login to your account</p>
 
             <form onSubmit={handleLogin}>
-              {/* Email */}
               <input type="email" placeholder="Email" required />
 
-              {/* Password */}
               <div className="pass-input-div">
                 <input
                   type={showPassword ? "text" : "password"}
@@ -53,7 +46,6 @@ function Login() {
                 </span>
               </div>
 
-              {/* Options */}
               <div className="login-center-options">
                 <div className="remember-div">
                   <input type="checkbox" id="remember" />
@@ -64,7 +56,6 @@ function Login() {
                 </Link>
               </div>
 
-              {/* Buttons */}
               <div className="login-center-buttons">
                 <button type="submit">Login</button>
                 <button type="button">
